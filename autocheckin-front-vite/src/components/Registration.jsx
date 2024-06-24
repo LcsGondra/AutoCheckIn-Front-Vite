@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import InputMask from 'react-input-mask';
+import './Registration.css'; 
 
 function Registration(props) {
     const [registrationFields, setRegistrationFields] = useState([]);
@@ -126,7 +127,7 @@ function Registration(props) {
 
     return (
         <div>
-            <h1>Registration</h1>
+            <h1>Cadastro de Paciente</h1>
             <form onSubmit={handleSubmit}>
                 {registrationFields.map(field => (
                     <div key={field.id}>

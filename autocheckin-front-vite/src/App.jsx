@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Registration from './components/Registration';
 import Questionnaire from './components/Questionnaire';
 import { useLocation } from 'react-router-dom';
+import './App.css';
 
 function App() {
   return (
@@ -24,13 +25,15 @@ function LandingPage() {
 
   return (
     <div>
-      <h1>Welcome to the Questionnaire App</h1>
-      <Link to="/register">
-        <button>Go to Registration</button>
-      </Link>
+      <h1>Bem vindo ao AutoCheckIn</h1>
+      <div className="button-container">
+        <Link to="/register">
+          <button>Iniciar CheckIn</button>
+        </Link>
+      </div>
       {checkIn && (
         <div>
-          <h2>Check-In Information</h2>
+          <h2>Informacoes de Check-In</h2>
           <p><strong>Prioridade:</strong> {checkIn.prioridade}</p>
           <p><strong>Tipo de Emergência:</strong> {checkIn.tipoEmergencia}</p>
         </div>

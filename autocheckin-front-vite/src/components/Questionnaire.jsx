@@ -248,12 +248,12 @@ const Questionnaire = (props) => {
 
     return (
         <div className="questionnaire-container">
-            <h1 className="title">Questionnaire</h1>
+            <h1 className="title">Questionario</h1>
             <form onSubmit={handleSubmit} className="form-container">
                 <div className="question-container">
-                    <label className="question-label">Select Hospital:</label>
+                    <label className="question-label">Selecione Hospital/Clinica:</label>
                     <select value={selectedHospital ? selectedHospital.id : ''} onChange={handleHospitalChange} required className="dropdown">
-                        <option value="">Select Hospital</option>
+                        <option value="">Selecione Hospital/Clinica:</option>
                         {hospitals.map(hospital => (
                             <option key={hospital.id} value={hospital.id}>
                                 {hospital.unidade} - {hospital.endereco.cidade}, {hospital.endereco.estado}
@@ -285,7 +285,7 @@ const Questionnaire = (props) => {
                     <p className="warning-message">Por favor, aceite os termos de consentimento</p>
                 )}
                 <button type="submit" className="submit-button">
-                    Submit
+                    Enviar
                 </button>
             </form>
         </div>
