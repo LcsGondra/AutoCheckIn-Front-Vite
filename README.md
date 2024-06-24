@@ -75,6 +75,7 @@ my-project/
 2. Abra seu navegador e acesse `http://localhost:5173/` para ver o aplicativo em execução.
 
 3. Para ter toda a funcionalidade precisa ter tambem conexao com o Backend, nesse Repositorio:
+https://github.com/LcsGondra/AutoCheckIn/
 
 ## Como Funciona
 
