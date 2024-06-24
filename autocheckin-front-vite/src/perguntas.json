@@ -1,0 +1,558 @@
+{
+    "questionario": {
+        "perguntas": [
+            {
+                "numero": 0,
+                "pergunta": "Tem plano de saúde",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Operadora de Saúde",
+                            "tipo": "dropdown",
+                            "opcoes": [
+                                "Operadora 1",
+                                "Operadora 2",
+                                "Operadora 3"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 1,
+                "pergunta": "Plano",
+                "tipo": "dropdown",
+                "opcoesDependentes": {
+                    "Operadora 1": [
+                        "Plano A1",
+                        "Plano B1",
+                        "Plano C1"
+                    ],
+                    "Operadora 2": [
+                        "Plano A2",
+                        "Plano B2",
+                        "Plano C2"
+                    ],
+                    "Operadora 3": [
+                        "Plano A3",
+                        "Plano B3",
+                        "Plano C3"
+                    ]
+                }
+            },
+            {
+                "numero": 2,
+                "pergunta": "Número do Beneficiário",
+                "tipo": "text"
+            },
+            {
+                "numero": 3,
+                "pergunta": "Alergias a Medicamentos",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Substâncias",
+                            "tipo": "checkbox",
+                            "opcoes": [
+                                "Penicilina",
+                                "Sulfa",
+                                "Dipirona",
+                                "Anti-inflamatórios",
+                                "Bromoprida",
+                                "Metoclopramida / Plasil®",
+                                "Tramadol / Tramal®",
+                                "Escopolamina / Buscopan®",
+                                "Outros"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 4,
+                "pergunta": "Doenças Prévias",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Doenças",
+                            "tipo": "checkbox",
+                            "opcoes": [
+                                "Hipertesão arterial",
+                                "Diabetes",
+                                "Doença Coronariana",
+                                "Infarto do Miocárdio",
+                                "AVC isquêmico",
+                                "AVC Hemorrágico",
+                                "Insuficiência Renal Crônica",
+                                "Asma / Bronquite",
+                                "Enfisema pulmonar",
+                                "Hipotireoidismo",
+                                "Dislipidemia",
+                                "Ansiedade",
+                                "Depressão",
+                                "Pneumonia de Repetição",
+                                "Infecção Urinária de Repetição",
+                                "Cálculo Renal",
+                                "Gastrite / Esofagite",
+                                "Alzheimer",
+                                "Parkinson",
+                                "Etilismo social",
+                                "Etilismo Habitual",
+                                "Tabagismo",
+                                "Uso de drogas ilícitas",
+                                "Outros"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 5,
+                "pergunta": "Histórico de câncer",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Tipo de Câncer",
+                            "tipo": "text"
+                        },
+                        {
+                            "pergunta": "Quimioterapia",
+                            "tipo": "radio",
+                            "opcoes": [
+                                "Não",
+                                "Sim"
+                            ],
+                            "dependente": {
+                                "Sim": [
+                                    {
+                                        "pergunta": "Data da última Quimioterapia",
+                                        "tipo": "date"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "pergunta": "Radioterapia",
+                            "tipo": "radio",
+                            "opcoes": [
+                                "Não",
+                                "Sim"
+                            ],
+                            "dependente": {
+                                "Sim": [
+                                    {
+                                        "pergunta": "Data de última Radioterapia",
+                                        "tipo": "date"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 6,
+                "pergunta": "Faz uso de medicamentos de forma continuada",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Nome do Medicamento",
+                            "tipo": "text"
+                        },
+                        {
+                            "pergunta": "Dose",
+                            "tipo": "text"
+                        },
+                        {
+                            "pergunta": "Quantas vezes ao dia",
+                            "tipo": "text"
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 7,
+                "pergunta": "Esteve internado nos últimos 6 meses",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Motivo da Internação",
+                            "tipo": "text"
+                        },
+                        {
+                            "pergunta": "Data da Internação",
+                            "tipo": "date"
+                        },
+                        {
+                            "pergunta": "Data de alta",
+                            "tipo": "date"
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 8,
+                "pergunta": "Atendimento de Emergência",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 9,
+                "pergunta": "Data de início dos sintomas",
+                "tipo": "date"
+            },
+            {
+                "numero": 10,
+                "pergunta": "Inconsciente",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 11,
+                "pergunta": "Febre",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Temperatura",
+                            "tipo": "radio",
+                            "opcoes": [
+                                "Abaixo de 38◦C",
+                                "Igual ou Acima de 38◦C"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 12,
+                "pergunta": "Sonolência ou Desorientação",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Iniciada ou Modificada nas últimas 48h",
+                            "tipo": "radio",
+                            "opcoes": [
+                                "Não",
+                                "Sim"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 13,
+                "pergunta": "Dificuldade para respirar",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 14,
+                "pergunta": "Dor no peito",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Característica da dor",
+                            "tipo": "checkbox",
+                            "opcoes": [
+                                "Em aperto",
+                                "Em Pontada",
+                                "Em queimação",
+                                "Relacionada com a respiração",
+                                "Relacionada a movimentação do corpo ou dos braços",
+                                "Iniciada após traumatismo no tórax"
+                            ]
+                        },
+                        {
+                            "pergunta": "Irradiação",
+                            "tipo": "checkbox",
+                            "opcoes": [
+                                "Para o braço esquerdo",
+                                "Para o pescoço",
+                                "Para o estômago",
+                                "Para as costas",
+                                "Para o braço direito"
+                            ]
+                        },
+                        {
+                            "pergunta": "Sintomas associados",
+                            "tipo": "checkbox",
+                            "opcoes": [
+                                "Suor Frio",
+                                "Enjoo ou vomito",
+                                "Desmaio ou Sensação de Desmaio",
+                                "Falta de ar"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 15,
+                "pergunta": "Dificuldade para falar",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Característica",
+                            "tipo": "radio",
+                            "opcoes": [
+                                "Não consegue falar",
+                                "Fala enrolada"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 16,
+                "pergunta": "Perda de movimento nos braços ou nas pernas",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 17,
+                "pergunta": "Assimetria Facial",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 18,
+                "pergunta": "Dor de cabeça de inicio súbito e forte intensidade",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 19,
+                "pergunta": "Tosse",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Característica",
+                            "tipo": "radio",
+                            "opcoes": [
+                                "Seca",
+                                "Com secreção clara",
+                                "Com secreção amarelada / esverdeada",
+                                "Com sangue"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 20,
+                "pergunta": "Coriza",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 21,
+                "pergunta": "Congestão Nasal",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 22,
+                "pergunta": "Dor no Corpo",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 23,
+                "pergunta": "Dor nas articulações",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 24,
+                "pergunta": "Dor de cabeça / atrás dos olhos",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 25,
+                "pergunta": "Mal estar geral",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 26,
+                "pergunta": "Diarreia",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Quantas vezes nas últimas 24 horas",
+                            "tipo": "radio",
+                            "opcoes": [
+                                "menos de 5 vezes",
+                                "5 ou mais vezes"
+                            ]
+                        },
+                        {
+                            "pergunta": "Consistência das fezes",
+                            "tipo": "radio",
+                            "opcoes": [
+                                "Líquida",
+                                "Pastosa"
+                            ]
+                        },
+                        {
+                            "pergunta": "Cólica",
+                            "tipo": "radio",
+                            "opcoes": [
+                                "Não",
+                                "Sim"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 27,
+                "pergunta": "Dor abdominal",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ],
+                "dependente": {
+                    "Sim": [
+                        {
+                            "pergunta": "Localização",
+                            "tipo": "checkbox",
+                            "opcoes": [
+                                "1",
+                                "2",
+                                "3",
+                                "4",
+                                "5"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "numero": 28,
+                "pergunta": "Vômitos / enjoo",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 29,
+                "pergunta": "Ardência para urinar",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            },
+            {
+                "numero": 30,
+                "pergunta": "Dor lombar",
+                "tipo": "radio",
+                "opcoes": [
+                    "Não",
+                    "Sim"
+                ]
+            }
+        ]
+    }
+}

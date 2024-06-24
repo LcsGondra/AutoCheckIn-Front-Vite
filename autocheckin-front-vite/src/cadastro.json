@@ -1,0 +1,80 @@
+[
+        {
+            "id": "cpf",
+            "label": "CPF",
+            "type": "text",
+            "format": "999.999.999-99",
+            "required": true
+        },
+        {
+            "id": "nome",
+            "label": "Nome",
+            "type": "text",
+            "required": true
+        },
+        {
+            "id": "nascimento",
+            "label": "Data de Nascimento",
+            "type": "date",
+            "required": true
+        },
+        {
+            "id": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true
+        },
+        {
+            "id": "telefone",
+            "label": "Telefone Celular",
+            "type": "text",
+            "format": "(99) 99999-9999",
+            "required": true
+        },
+        {
+            "id": "cep",
+            "label": "CEP",
+            "type": "text",
+            "format": "99999-999",
+            "required": true
+        },
+        {
+            "id": "rua",
+            "label": "Rua",
+            "type": "text",
+            "autoFill": true,
+            "required": true
+        },
+        {
+            "id": "numero",
+            "label": "Número",
+            "type": "text",
+            "required": true
+        },
+        {
+            "id": "complemento",
+            "label": "Complemento",
+            "type": "text"
+        },
+        {
+            "id": "bairro",
+            "label": "Bairro",
+            "type": "text",
+            "autoFill": true,
+            "required": false
+        },
+        {
+            "id": "cidade",
+            "label": "Cidade",
+            "type": "text",
+            "autoFill": true,
+            "required": true
+        },
+        {
+            "id": "estado",
+            "label": "Estado",
+            "type": "text",
+            "autoFill": true,
+            "required": true
+        }
+    ]
