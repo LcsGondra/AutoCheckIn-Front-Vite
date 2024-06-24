@@ -5,9 +5,9 @@ ESSE PROJETO TRABALHA EM CONJUNTO COM ESSE OUTRO PROJETO, LEMBRE DE USAR OS DOIS
 - **FRONT-END**: https://github.com/LcsGondra/AutoCheckIn-Front-Vite
 - **BACK-END**: https://github.com/LcsGondra/AutoCheckIn/
 
-## Descrição
+# AutoCheckIn - Frontend em Javascript React
 
-Este projeto é um aplicativo de questionário desenvolvido em React usando Vite como ferramenta de construção. O objetivo do aplicativo é permitir que os usuários preencham um questionário após se registrarem. O questionário contém várias perguntas que podem ter diferentes tipos de resposta, como rádio, dropdown, texto, checkbox e data. Além disso, o aplicativo possui uma lógica de dependência para certas perguntas, exibindo perguntas adicionais com base nas respostas fornecidas.
+Este repositório contém o frontend para o projeto AutoCheckIn, desenvolvido em javascript com o framework React. O AutoCheckIn é um sistema que facilita o processo de check-in em hospitais, utilizando informações preenchidas pelos pacientes.
 
 ## Tecnologias Utilizadas
 
